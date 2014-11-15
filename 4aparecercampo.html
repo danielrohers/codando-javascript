@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Titulo da pagina</title>
+</head>
+<body>
+
+	<form name="meu_form">
+
+		<label> Meio de contato: </label> <br>
+		<input type="radio" name="contato" value="T" onclick="mostrar();"> Telefone <br>
+		<input type="radio" name="contato" value="E" onclick="mostrar();"> Email <br><br>
+
+		<input type="text" name="telefone" placeholder="35412233" style="display:none"> <br>
+
+		<input type="email" name="email" placeholder="a@a.com.br" style="display:none"> <br>
+	</form>
+
+    <script type="text/javascript">
+
+        function mostrar(){
+
+            if ( document.meu_form.contato.value == 'T') {
+               document.meu_form.telefone.style.display = "";
+               document.meu_form.email.style.display = "none";
+            }
+
+            if ( document.meu_form.contato.value == 'E') {
+               document.meu_form.email.style.display = "";
+               document.meu_form.telefone.style.display = "none";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Titulo da pagina</title>
+	</head>
+	<body>
+
+		<form name="meu_form">
+		    <label for="telefone"> Informe seu telefone: </label>
+			<input id="telefone" type="text" name="telefone"> <br>
+
+            <button type="button" onclick="validar();">Enviar</button>
+		</form>
+
+        <script type="text/javascript">
+
+            function validar(){
+                if ( document.meu_form.telefone.value.length != 8 ) {
+                  window.alert('Telefone inválido.');
+                }
+            }
+
+        </script>
+
+	</body>
+ </html>
+

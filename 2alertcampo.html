@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Titulo da pagina</title>
+</head>
+<body>
+
+	<form name="meu_form">
+		<input type="text" name="texto1" value="1">
+
+        <button type="button" onclick="mensagem();">Enviar</button>
+	</form>
+
+    <script type="text/javascript">
+
+        function mensagem(){
+            window.alert(document.meu_form.texto1.value);
+        }
+
+    </script>
+
+</body>
+</html>
+
